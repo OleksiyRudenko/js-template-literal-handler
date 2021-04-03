@@ -7,13 +7,12 @@ handling with a [tag function](https://developer.mozilla.org/en-US/docs/Web/Java
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-## Table of Contents
-
 - [Installation](#installation)
 - [Development](#development)
   - [The task](#the-task)
     - [Level 1](#level-1)
     - [Level 80](#level-80)
+- [Project improvement and bug reporting](#project-improvement-and-bug-reporting)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 <!-- generated with [DocToc](https://github.com/thlorenz/doctoc) -->
@@ -135,3 +134,16 @@ transform`Let me tell you about ${'a RED fox! cunning,SliCk and quick.'} The end
 //   {"b":5,"c":"def"}
 //   a13 = TESTFUNCTION(valueZ=5)'
 ```
+
+## Project improvement and bug reporting
+
+Found a bug in documentation or code?
+Please report it via
+[issues](https://github.com/OleksiyRudenko/js-template-literal-handler/issues).
+
+Feel free opening PRs to fix
+[issues](https://github.com/OleksiyRudenko/js-template-literal-handler/issues)
+or otherwise improve the project.
+
+Please note that this project doesn't accept pull requests
+with task implementation code.
