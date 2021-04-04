@@ -21,20 +21,3 @@ export function toBeOneOf(received, items = []) {
     pass: false,
   };
 }
-
-const transformers = {
-  number: n => n * 2 + 3 + '',
-  string: s => s.toLowerCase(),
-  stringer: s => capitalizeTitleStyle(s),
-  function: f => f(),
-  object: o => JSON.stringify(o),
-};
-
-function capitalizeTitleStyle(string) {
-  return string.replace(/[^,.?; ]+/g, s => s[0].toUpperCase() + s.slice(1).toLowerCase());
-}
-
-export function transformItem(item) {
-  const type = typeof item;
-  return transformers[type] ? transformers[type](item) : item;
-}

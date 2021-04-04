@@ -63,7 +63,7 @@
       "prettier --write"
     ],
     "**/*.md": [
-      "doctoc --update-only --github"
+      "doctoc --title \"## Contents\" --github"
     ]
   }
 }
