@@ -11,6 +11,12 @@ export function transform() {}
 
 /*
   Level 1: expects no parameters. Returns its own name capitalized.
+    Usage example:
+      testFunction() should return 'TESTFUNCTION'
   Level 80: expects 2 parameters. Returns its own name capitalized and both parameters' values appended to it.
+    Whitespaces should be trimmed from the first parameter.
+    Parameters values are glued with '=' and parenthesized.
+    Usage example:
+      testFunction("some Text", 125) should return 'TESTFUNCTION(someText=125)'
  */
 export function testFunction() {}
