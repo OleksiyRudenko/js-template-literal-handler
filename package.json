@@ -4,6 +4,7 @@
   "description": "JS template literal handler -- an educational project",
   "main": "src/transform.js",
   "scripts": {
+    "doctoc": "doctoc --title \"## Contents\" --github README.md",
     "lint:js": "npx eslint --cache **/*.js",
     "lint:js:fix": "npm run lint:js -- --fix",
     "prettify": "npx prettier --write **/*.{js,css,md,html}",
@@ -17,10 +18,8 @@
   },
   "keywords": [
     "javascript",
-    "template",
-    "literal",
-    "tag",
-    "function",
+    "template literal",
+    "tag function",
     "education"
   ],
   "author": "Oleksiy Rudenko",
@@ -34,6 +33,7 @@
     "@babel/eslint-parser": "^7.13.14",
     "@babel/preset-env": "^7.13.12",
     "babel-preset-env": "^1.7.0",
+    "doctoc": "^2.0.0",
     "eslint": "^7.23.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.1",
@@ -61,6 +61,9 @@
     ],
     "**/*.{js,css,md,html}": [
       "prettier --write"
+    ],
+    "**/*.md": [
+      "doctoc --update-only --github"
     ]
   }
 }
